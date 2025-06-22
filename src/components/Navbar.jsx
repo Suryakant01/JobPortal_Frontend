@@ -16,7 +16,7 @@ function Navbar() {
                         alt="Logo"
                         className="h-8 w-8 mr-2"
                     />
-                    <Link to="/" className="text-xl font-bold">JobTracker</Link>
+                    <Link to="/" className="text-xl font-bold">HireJourney</Link>
                 </div>
                 <div>
                     {user ? (
