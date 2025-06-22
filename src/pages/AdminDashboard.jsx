@@ -76,8 +76,8 @@ function AdminDashboard() {
                         {jobs.map((job) => (
                             <tr key={job._id}>
                                 <td className="px-6 py-4 whitespace-nowrap">
-                                    <div className="text-sm font-medium text-gray-900">{job.user.name}</div>
-                                    <div className="text-sm text-gray-500">{job.user.email}</div>
+                                    <div className="text-sm font-medium text-gray-900">{job.user?.name || 'Deleted User'}</div>
+                                    <div className="text-sm text-gray-500">{job.user?.email || 'N/A'}</div>
                                 </td>
                                 <td className="px-6 py-4 whitespace-nowrap">
                                     <div className="text-sm font-medium text-gray-900">{job.company}</div>

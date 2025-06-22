@@ -9,7 +9,15 @@ function Navbar() {
     return (
         <nav className="bg-gray-800 text-white p-4">
             <div className="container mx-auto flex justify-between items-center">
-                <Link to="/" className="text-xl font-bold">JobTracker</Link>
+                <div className="flex items-center">
+                    {/* Logo */}
+                    <img
+                        src="/HireJourney1.svg"
+                        alt="Logo"
+                        className="h-8 w-8 mr-2"
+                    />
+                    <Link to="/" className="text-xl font-bold">JobTracker</Link>
+                </div>
                 <div>
                     {user ? (
                         <>
